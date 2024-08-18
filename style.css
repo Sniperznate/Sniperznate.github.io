@@ -1,0 +1,137 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 150, 150);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock{
+    height: 80vh;
+    width: 80vh;
+    background: radial-gradient(rgb(200, 200, 200), rgb(200, 200, 200), black, black);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hand{
+    position: absolute;
+    border-radius: 50%;
+}
+
+.s{
+    border-top: 30vh solid red;
+    border-bottom: 30vh solid transparent;
+    border-left: 1vh solid transparent;
+    border-right: 1vh solid transparent;
+    z-index: 1;
+    animation: tik-tok 60s steps(60) infinite;
+}
+
+.m{
+    border-top: 25vh solid yellow;
+    border-bottom: 25vh solid transparent;
+    border-left: 1vh solid transparent;
+    border-right: 1vh solid transparent;
+    z-index: 2;
+    animation: tik-tok 3600s steps(60) infinite;
+}
+
+.h{
+    border-top: 20vh solid blue;
+    border-bottom: 20vh solid transparent;
+    border-left: 1vh solid transparent;
+    border-right: 1vh solid transparent;
+    z-index: 3;
+    animation: tik-tok 86400s linear infinite;
+}
+
+@keyframes tik-tok {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+.stop_s{
+    border-top: 10vh solid white;
+    border-left: 2.5vh solid transparent;
+    border-right: 2.5vh solid transparent;
+    position: absolute;
+}
+
+.stop{
+    border-top: 5vh solid white;
+    border-left: 2vh solid transparent;
+    border-right: 2vh solid transparent;
+    position: absolute;
+}
+
+.d12{
+    translate: 0vh -37.5vh;
+}
+
+.d11{
+    transform: rotateZ(330deg);
+    translate: -20vh -34.64vh;
+}
+
+.d10{
+    transform: rotateZ(300deg);
+    translate: -34.64vh -20vh;
+}
+
+.d9{
+    transform: rotateZ(270deg);
+    translate: -37.5vh 0vh;
+}
+
+.d8{
+    transform: rotateZ(240deg);
+    translate: -34.64vh 20vh;
+}
+
+.d7{
+    transform: rotateZ(210deg);
+    translate: -20vh 34.64vh;
+}
+
+.d6{
+    transform: rotateZ(180deg);
+    translate: 0vh 37.5vh;
+}
+
+.d5{
+    transform: rotateZ(150deg);
+    translate: 20vh 34.64vh;
+}
+
+.d4{
+    transform: rotateZ(120deg);
+    translate: 34.64vh 20vh;
+}
+
+.d3{
+    transform: rotateZ(90deg);
+    translate: 37.5vh 0vh;
+}
+
+.d2{
+    transform: rotateZ(60deg);
+    translate: 34.64vh -20vh;
+}
+
+.d1{
+    transform: rotateZ(30deg);
+    translate: 20vh -34.64vh;
+}
